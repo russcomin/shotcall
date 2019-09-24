@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="public/style.css">
+</head>
+<body>
+	<div id="container">
+		<div class="filters">
+			<div class="tab-selection">
+				<div class="tab-single active-tab">
+					<img src="public/images/game.svg">
+					<p>Sessions</p>
+				</div><!-- tab-single -->
+				<div class="tab-single default-tab">
+					<img src="public/images/player.svg">
+					<p>Players</p>
+				</div><!-- tab-single -->				
+			</div><!-- end tab-selection -->
+			<div class="filters-header">
+				<p class="p-title">Search Filters</p>
+				<img src="public/images/filter.svg">
+			</div><!-- end filters-header -->
+			<div class="filter-tile">
+				<p class="p-main">Show Availible</p>
+				<div class="switch">
+					<div class="on"></div>
+				</div><!-- end switch -->
+			</div><!-- end filter-tile -->
+			<div class="filter-tile">
+				<p class="p-main">Session Type</p>
+			</div><!-- end filter-tile -->
+			<div class="select-tile">
+				<p>Standard</p> 
+				<div class="checkbox">
+					<div class="selected"></div>
+				</div><!-- end checkbox -->
+			</div><!-- end select-tile -->
+			<div class="select-tile tile-fix">
+				<p>Raffle</p> 
+				<div class="checkbox">
+					<div class="selected"></div>
+				</div><!-- end checkbox -->
+			</div><!-- end select-tile -->
+			<div class="select-tile default-select">
+				<p>Queue</p> 
+				<div class="checkbox">
+				</div><!-- end checkbox -->
+			</div><!-- end select-tile -->
+			<div class="select-tile  default-select tile-fix">
+				<p>Request</p> 
+				<div class="checkbox">
+				</div><!-- end checkbox -->
+			</div><!-- end select-tile -->
+			<div class="filter-tile platform-tile">
+				<p class="p-main">Platform</p>
+				<div class="tiles-wrapper">
+					<div class="platform-box box-first">
+						<img src="public/images/xbox.svg">
+					</div><!-- end platform box -->
+					<div class="platform-box platform-active">
+						<img src="public/images/pc.svg">
+					</div><!-- end platform box -->
+					<div class="platform-box">
+						<img src="public/images/ps.svg">
+					</div><!-- end platform box -->					
+					<div class="platform-box">
+						<img src="public/images/wii.svg" style="margin-top: 14px;">
+					</div><!-- end platform box -->					
+					<div class="platform-box platform-active">
+						<img src="public/images/sw.svg">
+					</div><!-- end platform box -->					
+
+				</div><!-- end tiles-wrapper -->
+			</div><!-- end filter-tile -->	
+			<div class="filter-tile slider-box">
+				<p class="p-main">Session Cost</p>
+				<div class="cost-label">
+					<p id="demo"></p>
+				</div><!-- end const-label -->
+				<div class="slidecontainer">
+				  	<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+				</div>
+			</div><!-- end filter-tile -->
+			<div class="filter-tile sessions-tile">
+				<p class="p-main">Availible Sessions</p>
+			</div><!-- end filter-tile -->
+			<div class="availible-tile">
+				<p>League Of Legends <span>(16)</span></p>
+				<div class="checkbox">
+				</div><!-- end checkbox -->				
+			</div><!-- end availible-tab -->	
+			<div class="availible-tile">
+				<p>Fortnite<span> (6)</span></p>
+				<div class="checkbox">
+				</div><!-- end checkbox -->				
+			</div><!-- end availible-tab -->
+			<div class="view-all">
+				<p>View All</p>
+			</div><!-- end view-all -->						
+		</div><!-- end filters -->
+	</div><!-- end container -->
+	<script type="text/javascript">
+	var slider = document.getElementById("myRange");
+	var output = document.getElementById("demo");
+	output.innerHTML = "$"+slider.value; // Display the default slider value
+
+	// Update the current slider value (each time you drag the slider handle)
+	slider.oninput = function() {
+	  output.innerHTML = "$"+this.value;
+	}
+		
+	</script>
+</body>
+</html>
