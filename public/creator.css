@@ -1,0 +1,268 @@
+* {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	outline: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Poppins-M'; /*a name to be used later*/
+    src: url('fonts/Poppins-Medium.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Poppins-S'; /*a name to be used later*/
+    src: url('fonts/Poppins-SemiBold.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Poppins-R'; /*a name to be used later*/
+    src: url('fonts/Poppins-Regular.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Poppins-B'; /*a name to be used later*/
+    src: url('fonts/Poppins-Bold.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Poppins-E'; /*a name to be used later*/
+    src: url('fonts/Poppins-ExtraBold.ttf'); /*URL to font*/
+}
+
+body {
+	background: #0F151C;
+}
+
+#container {
+	width: 100%;
+	height: auto;
+}
+
+
+.hero-section {
+	width: 100%;
+	height: 688px;
+	background: url(images/bg.png), #0C1116;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	float: left;
+}
+
+.navigation {
+	width: 1270px;
+	height: 48px;
+	margin: 0 auto;
+	margin-top: 63px;
+}
+
+.logo {
+	float: left;
+}
+
+.search {
+	border: none;
+	width: 207px;
+	height: 36px;
+	background: #151D25;
+	border-radius: 32px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 28px;
+	text-indent: 20px;
+	color: white;
+	font-family: Poppins-M;
+	background-image:url(images/search.svg); 
+	background-repeat: no-repeat; 
+	background-position: 178px 10px;
+}
+
+.search::placeholder {
+	font-family: Poppins-M;
+	font-size: 12px;
+	color: #4D5C6D;
+}
+
+.login {
+	float: right; 
+	color: #4D5C6D;
+	font-family: Poppins-S;
+	font-size: 12px;
+	cursor: pointer;
+	margin-top: 13px;
+	transition: .2s;
+}
+
+.login:hover {
+	font-family: Poppins-M;
+	transition: .2s;
+	color: white;
+}
+
+.hero {
+	width: 1280px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.main-title {
+	font-family: Poppins-E;
+	font-size: 53px;
+	color: white;
+	line-height: 100%;
+	text-align: center;
+	margin-top: 115px;
+	text-align: left;
+}
+
+.main-sub {
+	font-family: Poppins-M;
+	font-size: 14px;
+	color: #5B6570;
+	text-align: center;
+	margin-top: 34px;
+	text-align: left;
+}
+
+.game-pic {
+	float: right;
+	margin-top: -178px;
+}
+
+.request-wrapper {
+	width: 1282px;
+	height: 615px;
+	background: #11181F;
+	border: 1px solid #17212B;
+	box-sizing: border-box;
+	border-radius: 4px;
+	margin: 0 auto;
+	margin-top: 110px;
+	margin-bottom: 50px;
+}
+
+.request-left {
+	width: 612px;
+	height: 100%;
+	background: #0F151B;
+	border-right: 1px solid #17212B;
+	border-bottom: 1px solid #17212B;
+	box-sizing: border-box;
+	border-radius: 4px;
+	text-align: center;
+	float: left;
+}
+
+.field-wrapper {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.field-p {
+	font-family: Poppins-S;
+	font-size: 12px;
+	color: #F3F3F3;
+	float: left;
+	margin-top: 25px;
+	margin-left: 34px;
+	width: 100%;
+	text-align: left;
+}
+
+.field-input {
+	width: 265px;
+	height: 43px;
+	background: #10171D;
+	border: 1px solid #17212B;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.08);
+	border-radius: 4px;
+	float: left;
+	margin-left: 34px;
+	margin-top: 18px;
+	text-indent: 18px;
+	font-family: Poppins-M;
+	color: white;
+}
+
+.field-input::placeholder {
+	font-family: Poppins-M;
+	font-size: 11px;
+	color: #3A4957;
+}
+
+.no-mar {
+	margin-left: 14px;
+}
+
+.full-input {
+	width: 544px;
+}
+
+.long-input {
+	height: 140px;
+	padding-top: 15px;
+	resize: none;
+}
+
+.submit {
+	width: 173px;
+	height: 47px;
+	background: #1DA1F2;
+	box-shadow: 0px 1px 9px rgba(110, 59, 255, 0.22);
+	border-radius: 4px;
+	border: none;
+	font-family: Poppins-S;
+	font-size: 12px;
+	color: white;
+	margin-top: 30px;
+}
+
+.right-wrapper {
+	width: 665px;
+	height: 100%;
+	float: left;
+}
+
+.text-tile {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.text-tile > img {
+	float: left;
+	margin-top: 48px;
+	margin-left: 37px;
+}
+
+.text-tile > p {
+	font-family: Poppins-S;
+	font-size: 20px;
+	color: white;
+	line-height: 120%;
+	float: left;
+	margin-left: 20px;
+	margin-top: 45px;
+}
+
+.text-tile > p > .small-p {
+	font-family: Poppins-M;
+	font-size: 14px;
+	color: #55606A;
+}
+
+.text-tile > p > .normal-p {
+	float: left;
+	font-family: Poppins-M;
+	font-size: 13px;
+	color: #898E94;
+	line-height: 160%;
+	margin-top: 20px;
+}
